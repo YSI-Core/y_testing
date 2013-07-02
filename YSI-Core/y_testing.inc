@@ -69,7 +69,7 @@ Changelog:
 
 // "y_renative" allows native functions to be declared without constantly trying
 // to redefine it.
-#include "..\YSI-Internal\y_renative"
+#include "..\YSI_Internal\y_renative"
 
 #define native%0(%1); _YSI_NO_TAG_NATIVE:_YSI_RE_NATIVE<%0@|||%1|||%0>_YSI_RE_STOCK<%0|||%1|||_:%0@>
 
@@ -182,15 +182,15 @@ static stock
 #endif
 
 // These all need to come AFTER the types are defined in case the have tests.
-#include "..\YSI-Internal\y_version"
+#include "..\YSI_Internal\y_version"
 
-#include "..\YSI-Storage\y_amx"
-#include "..\YSI-Internal\y_shortfunc"
+#include "..\YSI_Storage\y_amx"
+#include "..\YSI_Internal\y_shortfunc"
 #include "y_debug"
 
-#include "..\YSI-Internal\y_natives"
+#include "..\YSI_Internal\y_natives"
 
-#include "..\YSI-Coding\y_va"
+#include "..\YSI_Coding\y_va"
 
 /**--------------------------------------------------------------------------**\
 <summary>Testing_Ask</summary>
