@@ -784,7 +784,7 @@ stock Testing_RunAll()
 	TEST_REPORT("  ||===================||  ");
 	TEST_REPORT(" ");
 	Testing_Run(tests, fails, _, true);
-#if !defined JUST_TEST && defined YSI_TESTS
+#if !defined JUST_TEST && defined YSI_TESTS && !defined _YSI_NO_TEST_VERIFICATION
 	if (YSI_g_sTestResult != 9) printf("*** Test system verification failed!");
 	else
 #endif
@@ -820,7 +820,7 @@ stock Testing_RunAll()
 	//state ysi_debug : on;
 }
 
-#if defined YSI_TESTS && !defined YSI_NO_TEST_VERIFICATION
+#if defined YSI_TESTS && !defined _YSI_NO_TEST_VERIFICATION
 
 // Meta tests.
 
