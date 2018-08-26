@@ -820,7 +820,7 @@ stock Testing_RunAll()
 	//state ysi_debug : on;
 }
 
-#if defined YSI_TESTS
+#if defined YSI_TESTS && !defined YSI_NO_TEST_VERIFICATION
 
 // Meta tests.
 
